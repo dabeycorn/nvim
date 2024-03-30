@@ -1,4 +1,5 @@
 -- TODO Sort this out
+
 vim.o.termguicolors = true
 vim.o.syntax = 'on'
 vim.o.errorbells = false
@@ -21,4 +22,5 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 vim.wo.signcolumn = 'yes'
 vim.wo.wrap = false
+vim.opt.timeoutlen = 500
 
