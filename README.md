@@ -15,5 +15,5 @@
 ## TODO
 WK
 TS
-LSP
+snip
 

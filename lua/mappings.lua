@@ -9,7 +9,10 @@ local key_mapper = function(mode, key, result)
   )
 end
 
--- No crutches allowed
+-- EDITOR BINDS 
+
+
+-- VIM has no crutches
 key_mapper('', '<up>', '<nop>')
 key_mapper('', '<down>', '<nop>')
 key_mapper('', '<left>', '<nop>')
@@ -20,3 +23,21 @@ key_mapper('i', 'jK', '<ESC>')
 key_mapper('v', 'jk', '<ESC>')
 key_mapper('v', 'JK', '<ESC>')
 key_mapper('v', 'jK', '<ESC>')
+
+-- Telescope Binds
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+vim.keymap.set('n', '<leader>fm', builtin.man_pages, {})
+vim.keymap.set('n', '<leader>fc', builtin.colorscheme, {})
+vim.keymap.set('n', '<leader>fs', builtin.spell_suggest, {})
+
+-- nvim tree Binds
+vim.keymap.set('n', '<leader>tt', "<Cmd>NvimTreeToggle<CR>", {silent = true})
+vim.keymap.set('n', '<leader>tf', "<Cmd>NvimTreeFocus<CR>", {silent = true})
+vim.keymap.set('n', '<leader>tc', "<Cmd>NvimTreeCollapse<CR>", {silent = true})
+vim.keymap.set('n', '<leader>tl', "<Cmd>NvimTreeFindFile<CR>", {silent = true})
+
+-- hlslens Binds
