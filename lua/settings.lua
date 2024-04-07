@@ -23,3 +23,7 @@ vim.wo.relativenumber = true
 vim.wo.signcolumn = 'yes'
 vim.wo.wrap = false
 vim.opt.timeoutlen = 500
+
+vim.diagnostic.config({
+  virtual_text = false,
+})

@@ -24,6 +24,19 @@ key_mapper('v', 'jk', '<ESC>')
 key_mapper('v', 'JK', '<ESC>')
 key_mapper('v', 'jK', '<ESC>')
 
+-- LSP Binds & Trouble Binds
+vim.keymap.set('n', '<leader>ls', "<Cmd>LspStart<CR>")
+vim.keymap.set('n', '<leader>lx', "<Cmd>LspStop<CR>")
+vim.keymap.set('n', '<leader>li', "<Cmd>LspInfo<CR>")
+vim.keymap.set('n', '<leader>ll', "<Cmd>LspLog<CR>")
+vim.keymap.set('n', '<leader>lr', "<Cmd>LspRestart<CR>")
+
+-- Trouble Binds
+vim.keymap.set("n", "<leader>xx", function() require("trouble").toggle() end)
+vim.keymap.set("n", "<leader>xt", function() require("trouble").open() end)
+vim.keymap.set("n", "<leader>xw", function() require("trouble").toggle("workspace_diagnostics") end)
+vim.keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end)
+
 -- Telescope Binds
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})

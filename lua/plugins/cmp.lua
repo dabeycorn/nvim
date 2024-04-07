@@ -112,5 +112,6 @@ return {
           };
         }
       }
+      require('lspconfig')['jdtls'].setup{}
   end 
 }
