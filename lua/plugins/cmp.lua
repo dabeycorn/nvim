@@ -21,7 +21,6 @@ return {
     local compare = require('cmp.config.compare')
     local luasnip = require('luasnip')
 
-
     luasnip.config.setup({})
     cmp.setup({
             window = {

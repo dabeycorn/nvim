@@ -2,4 +2,4 @@ require('lazyLoader')
 require('settings')
 require('mappings')
 
-vim.cmd("colorscheme cyberdream")
+vim.cmd("colorscheme bluloco-dark")
