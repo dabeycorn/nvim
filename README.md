@@ -1,4 +1,4 @@
-# My terrible vim configs
+# My terrible nvim configs
 ## Plugin list:
 * Plugin manager is lazy (cuz i'm lazy :P)
 * folke/which-key.nvim - https://github.com/folke/which-key.nvim
