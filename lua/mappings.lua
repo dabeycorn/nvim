@@ -9,8 +9,10 @@ local key_mapper = function(mode, key, result)
   )
 end
 
--- EDITOR BINDS 
-
+-- ----EDITOR BINDS---- 
+-- Window Split
+vim.keymap.set('n', '<leader>|', "<Cmd>vsplit<CR>")
+vim.keymap.set('n', '<leader>-', "<Cmd>split<CR>")
 
 -- VIM has no crutches
 key_mapper('', '<up>', '<nop>')

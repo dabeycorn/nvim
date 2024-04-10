@@ -2,4 +2,5 @@ require('lazyLoader')
 require('settings')
 require('mappings')
 
-vim.cmd("colorscheme bluloco-dark")
+vim.cmd("colorscheme tokyodark")
+vim.cmd("NvimTreeOpen")
