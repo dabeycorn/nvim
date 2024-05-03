@@ -8,6 +8,7 @@ return {
     'hrsh7th/cmp-nvim-lua',
     'lukas-reineke/cmp-rg',
     "neovim/nvim-lspconfig",
+
     --[[{
       'onsails/lspkind-nvim',
         config = function()
@@ -112,6 +113,8 @@ return {
           };
         }
       }
-      require('lspconfig')['jdtls'].setup{}
+      require('lspconfig')['jdtls'].setup{
+        
+      }
   end 
 }

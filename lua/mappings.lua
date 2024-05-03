@@ -56,3 +56,12 @@ vim.keymap.set('n', '<leader>tc', "<Cmd>NvimTreeCollapse<CR>", {silent = true})
 vim.keymap.set('n', '<leader>tl', "<Cmd>NvimTreeFindFile<CR>", {silent = true})
 
 -- hlslens Binds
+vim.keymap.set('n', '<leader>h', [[*<Cmd>lua require('hlslens').start()<CR>]], {noremap = true, silent = true})
+
+-- signature Binds
+vim.keymap.set({ 'n' }, '<C-k>', function()       require('lsp_signature').toggle_float_win()
+    end, { silent = true, noremap = true, desc = 'toggle signature' })
+
+    vim.keymap.set({ 'n' }, '<Leader>k', function()
+     vim.lsp.buf.signature_help()
+    end, { silent = true, noremap = true, desc = 'toggle signature' })
