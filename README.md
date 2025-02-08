@@ -1,6 +1,5 @@
-# My terrible nvim configs
+# My neovim configs
 ## Plugin list:
-* Plugin manager is lazy (cuz i'm lazy :P)
 * folke/which-key.nvim - https://github.com/folke/which-key.nvim
 * nvim-treesitter/nvim-treesitter - https://github.com/nvim-treesitter/nvim-treesitter.git
 * andweeb/presence.nvim - https://github.com/andweeb/presence.nvim.git
